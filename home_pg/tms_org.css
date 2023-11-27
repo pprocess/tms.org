@@ -1,0 +1,317 @@
+/* page heading and page ending are same for all pages so do not edit it */
+
+/*--------------------page heading-----------------------*/
+
+.himg {
+    width:100%;
+    height:28%;
+    position:absolute;
+    z-index: -1;
+}
+
+hr {
+    border-radius: 5em;
+    margin: -1em;
+    margin-left:0;
+}
+
+#head {
+    display: flex;
+    flex-direction: row;
+}
+
+#hbox1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation {
+    justify-content: start;
+    background-color: rgb(77, 31, 107);
+    font-size: .8em;
+    font-family: Bahnschrift Light;
+    margin-right: -1em;
+    margin-top: -1em;
+    padding-top:1em;
+    padding-bottom:1em;
+    margin-bottom:1em;
+}
+
+#navtoggle {
+    margin-top:-1em;
+    display: none;
+    background-color:rgb(141, 83, 177);
+}
+
+#navmenu {
+    list-style: none;
+    display:flex, inline;
+    overflow: hidden;
+   
+}
+  
+nav a {
+    display: block;
+    text-decoration: none;
+    float: left;
+    color: #fff;
+    padding: .25em;
+    padding-top: 1em;
+    margin: 1em;
+    margin-bottom: -.5em;
+    margin-top: -1em;   
+    margin-right: 4em; 
+    align-self: center;
+}
+
+nav a:hover {
+    background-color: rgb(141, 83, 177);
+}
+
+.active {
+    background-color:#8d53b1;
+    color: gold;
+}
+
+
+@media screen and (max-width: 600px) {
+    .himg {
+        height:5em;
+        width:105%;
+        margin-left:-1em;;
+    }
+
+    header{
+        margin:-1em;
+        background: rgb(77, 31, 107);
+    }
+    
+    #navigation {
+        right:0;
+    }
+
+    #navtoggle {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        font-size: .7em;
+    }
+
+    nav a{
+        margin-top: .01em;
+        margin-bottom: .01em;
+    }
+
+    .active{
+        margin-bottom:.1em;
+    }
+
+    #head{
+        height:5em;
+    }
+    
+    hr{
+        border-radius: .3em;
+        margin-left:-2em;
+        margin-right:-2em;
+        margin-bottom:1em;
+        z-index: 2;
+    }
+}
+
+
+/*------------for page ending---------------*/
+
+#bottom {
+    background-color: #a28ef3;
+    display: flex;
+    position: relative;
+    flex-direction: row;   
+    justify-content: space-between; 
+    margin-top: 0;
+    margin-left: 0 em;
+    margin-right: -1em;
+}
+
+#blogo{
+    float: left;
+    margin: 1em;
+}
+
+.eadd {
+    display: inline;
+    align-self: center;
+    float: bottom;
+    text-align: right;
+    font-size: 1.2em;
+    font-family: Century Gothic;
+    color: white;
+    padding: 1em;
+    margin: 1em;
+}
+
+#map {
+    color:white;
+    display: inline;
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px){
+    #bottom{
+        height: 6em;
+        margin:-2em;
+        padding:.5em;
+    }
+
+    #blogo{
+        width:210%;
+        height:auto;
+    }
+    
+    .eadd {
+        font-size: .65em;
+    }
+}
+/*---------------------body below:---------------------*/
+
+
+
+#hr {
+    border-radius: .5em;
+    width:70%;
+}
+
+#body {
+    font-family: Verdana;
+    background-color: black;
+    color: white;
+    margin-top: 0em;
+}
+
+#wlc  {
+    padding: 1em;
+    font-size: 200%;
+    color: gold;
+    text-align: center;
+    margin-bottom: -.5em;
+}
+
+#p1 {
+    text-align: center;
+    float: center;
+    margin-right: 5em;
+    margin-left: 5em;  
+    margin-top: -1em;
+    padding: 0;
+    line-height: 2em;
+}
+
+#box {
+    display: flex, inline;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#v {
+    margin: .5em;
+    padding: .5em;
+    border-radius: .5em;
+    text-align: center;
+    font-size: 105%;
+}
+
+.position {
+    color: silver;
+    text-align: center;
+
+}
+
+.slideshow {
+    position: relative;
+    width: 30em;
+    height: 15em;
+    margin: 5em auto;
+}
+
+.slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.slides img.active {
+    display: block;
+}
+
+.team {
+    border: solid .25em silver;
+    border-color: silver;
+    border-radius: 5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em;
+    padding-bottom: 0;
+    margin: 1em;
+}
+  
+.team-member {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 5em;
+}
+  
+.team-member img {
+    width: 60%;
+    border-radius: 50%;
+    margin-bottom: 2em;
+}
+  
+@media screen and (max-width: 600px) {
+    #wlc {
+        font-size:120%;
+    }
+    
+    #p1 {
+        font-size:.8em;
+    }
+
+    #v {
+        font-size:.8em;
+    }
+
+    .team{
+        padding:-1em;
+    }
+
+    .team-member {
+      width: 50%;
+      font-size: .5em;
+      margin:-.1em;
+    }
+
+    .position {
+        font-size: .7em;
+    } 
+
+    .slideshow {
+        width: 20em;
+        height: 10em;
+        margin: 50px auto;
+    }
+}
+  
+  
+  
